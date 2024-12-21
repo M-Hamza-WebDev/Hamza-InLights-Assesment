@@ -1,14 +1,28 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Poppins, Open_Sans, DM_Sans, IBM_Plex_Sans } from "next/font/google";
 import "../styles/globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const poppins = Poppins({
+  weight: ["400", "600"], // Specify the desired weights
+  variable: "--font-poppins",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const ibmPlexSans = IBM_Plex_Sans({
+  weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
+  variable: "--font-ibm-plex-sans",
+});
+
+const openSans = Open_Sans({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+  variable: "--font-open-sans",
+});
+
+const dmSans = DM_Sans({
+  weight: ["400", "500", "700"],
+  subsets: ["latin"],
+  variable: "--font-dm-sans",
 });
 
 export const metadata = {
@@ -19,8 +33,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;600&family=Poppins:wght@400;600&display=swap"
+        />
+      </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={` ${poppins.variable} ${ibmPlexSans.variable} ${openSans.variable} ${dmSans.variable} antialiased`}
       >
         {children}
       </body>

@@ -7,6 +7,11 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        ibm: ["var(--font-ibm-plex-sans)", "sans-serif"],
+        open: ["var(--font-open-sans)", "sans-serif"],
+        dm: ["var(--font-dm-sans)", "sans-serif"],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
