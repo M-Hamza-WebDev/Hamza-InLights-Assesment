@@ -9,6 +9,7 @@ export default {
     extend: {
       fontFamily: {
         clash: ["'Clash Display'", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
         ibm: ["var(--font-ibm-plex-sans)", "sans-serif"],
         open: ["var(--font-open-sans)", "sans-serif"],
         dm: ["var(--font-dm-sans)", "sans-serif"],
