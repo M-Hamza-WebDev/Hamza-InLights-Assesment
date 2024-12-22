@@ -10,7 +10,7 @@ import updates from "@/images/svgs/updates.svg";
 import Image from "next/image";
 import Link from "next/link";
 
-const WhyOrinix = () => {
+const  WhyOrinix = () => {
   let whyUs = [
     {
       icon: responsive,
