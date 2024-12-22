@@ -8,9 +8,12 @@ export default {
   theme: {
     extend: {
       fontFamily: {
+        clash: ["'Clash Display'", "sans-serif"],
         ibm: ["var(--font-ibm-plex-sans)", "sans-serif"],
         open: ["var(--font-open-sans)", "sans-serif"],
         dm: ["var(--font-dm-sans)", "sans-serif"],
+        inter: ["var(--font-inter)", "sans-serif"],
+        manrope: ["var(--font-manrope)", "sans-serif"], // Adds Manrope as a custom font family
       },
       colors: {
         background: "var(--background)",

@@ -27,5 +27,36 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Clash Display', serif; /* Apply Clash Display to headings */
+  font-family: "Clash Display", serif; /* Apply Clash Display to headings */
+}
+
+.custom-container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 768px) {
+  .custom-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+@media (min-width: 1279px) {
+  .custom-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media (min-width: 1280px) and (max-width:1439px){
+  .custom-container {
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+}
+@media (min-width: 1440px) {
+  .custom-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1296px;
+  }
 }
