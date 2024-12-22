@@ -1,8 +1,8 @@
 import Image from "next/image";
 import React from "react";
-import logo from "../images/svgs/logo.svg";
+import logo from "@/images/svgs/logo.svg";
 import Link from "next/link";
-import menu from "../images/svgs/hamburger.svg";
+import menu from "@/images/svgs/hamburger.svg";
 
 const Header = () => {
   let NavItems = [

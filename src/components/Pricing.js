@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import checkCircle from "../images/svgs/check-circle.svg";
-import checkGold from "../images/svgs/check-circle-gold.svg";
+import checkCircle from "@/images/svgs/check-circle.svg";
+import checkGold from "@/images/svgs/check-circle-gold.svg";
 import Link from "next/link";
 import Image from "next/image";
 const Pricing = () => {

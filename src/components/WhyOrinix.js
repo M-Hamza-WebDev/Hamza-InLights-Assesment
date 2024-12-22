@@ -1,12 +1,12 @@
 import React from "react";
-import videoBackground from "../images/pngs/video-background.png";
-import videoPlay from "../images/svgs/video-play.svg";
-import responsive from "../images/svgs/responsive.svg";
-import layout from "../images/svgs/layout.svg";
-import fasterLoading from "../images/svgs/faster-loading.svg";
-import superSupport from "../images/svgs/super-support.svg";
-import documentation from "../images/svgs/documentation.svg";
-import updates from "../images/svgs/updates.svg";
+import videoBackground from "@/images/pngs/video-background.png";
+import videoPlay from "@/images/svgs/video-play.svg";
+import responsive from "@/images/svgs/responsive.svg";
+import layout from "@/images/svgs/layout.svg";
+import fasterLoading from "@/images/svgs/faster-loading.svg";
+import superSupport from "@/images/svgs/super-support.svg";
+import documentation from "@/images/svgs/documentation.svg";
+import updates from "@/images/svgs/updates.svg";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -77,7 +77,7 @@ const WhyOrinix = () => {
         <div className="mt-[105px] grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-y-[103px] gap-y-[50px]">
           {whyUs.map((item, index) => {
             return (
-              <div className="max-w-[287px] mx-auto">
+              <div key={index} className="max-w-[287px] mx-auto">
                 <Image
                   src={item.icon}
                   alt={item.alt}

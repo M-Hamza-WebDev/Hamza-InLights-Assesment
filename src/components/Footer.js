@@ -1,8 +1,8 @@
 import React from "react";
-import logo from "../images/svgs/logo.svg";
-import facebook from "../images/svgs/facebook.svg";
-import linkedin from "../images/svgs/linkedin.svg";
-import twitter from "../images/svgs/twitter.svg";
+import logo from "@/images/svgs/logo.svg";
+import facebook from "@/images/svgs/facebook.svg";
+import linkedin from "@/images/svgs/linkedin.svg";
+import twitter from "@/images/svgs/twitter.svg";
 import Link from "next/link";
 import Image from "next/image";
 
