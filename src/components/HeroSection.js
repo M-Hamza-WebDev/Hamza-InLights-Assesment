@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import dashboard from "@/src/images/pngs/dashboard.png";
+import dashboard from "../images/pngs/dashboard.png";
 
 const HeroSection = () => {
   return (

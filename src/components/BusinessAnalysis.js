@@ -1,9 +1,9 @@
 import Image from "next/image";
 import React from "react";
-import activity from "@/src/images/pngs/activity.png";
-import trusted from "@/src/images/svgs/trusted.svg";
-import hired from "@/src/images/svgs/hired.svg";
-import categories from "@/src/images/svgs/categories.svg";
+import activity from "../images/pngs/activity.png";
+import trusted from "../images/svgs/trusted.svg";
+import hired from "../images/svgs/hired.svg";
+import categories from "../images/svgs/categories.svg";
 const BusinessAnalysis = () => {
   let benefits = [
     {

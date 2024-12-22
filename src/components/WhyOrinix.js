@@ -1,12 +1,12 @@
 import React from "react";
-import videoBackground from "@/src/images/pngs/video-background.png";
-import videoPlay from "@/src/images/svgs/video-play.svg";
-import responsive from "@/src/images/svgs/responsive.svg";
-import layout from "@/src/images/svgs/layout.svg";
-import fasterLoading from "@/src/images/svgs/faster-loading.svg";
-import superSupport from "@/src/images/svgs/super-support.svg";
-import documentation from "@/src/images/svgs/documentation.svg";
-import updates from "@/src/images/svgs/updates.svg";
+import videoBackground from "../images/pngs/video-background.png";
+import videoPlay from "../images/svgs/video-play.svg";
+import responsive from "../images/svgs/responsive.svg";
+import layout from "../images/svgs/layout.svg";
+import fasterLoading from "../images/svgs/faster-loading.svg";
+import superSupport from "../images/svgs/super-support.svg";
+import documentation from "../images/svgs/documentation.svg";
+import updates from "../images/svgs/updates.svg";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -75,22 +75,23 @@ const WhyOrinix = () => {
           </Link>
         </div>
         <div className="mt-[105px] grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-y-[103px] gap-y-[50px]">
-            {
-                whyUs.map((item,index) => {
-                    return(
-                        <div className="max-w-[287px] mx-auto">
-                        <Image src={item.icon} alt={item.alt} className="mb-[22px] mx-auto" />
-                        <span className="font-clash font-semibold text-2xl text-white block mb-[11px] text-center">
-                          {item.title}
-                        </span>
-                        <p className="font-open font-semibold tracking-[-0.5px] text-[#FFFFFFB2] text-center">
-                         {item.description}
-                        </p>
-                      </div>
-                    )
-                })
-            }
-         
+          {whyUs.map((item, index) => {
+            return (
+              <div className="max-w-[287px] mx-auto">
+                <Image
+                  src={item.icon}
+                  alt={item.alt}
+                  className="mb-[22px] mx-auto"
+                />
+                <span className="font-clash font-semibold text-2xl text-white block mb-[11px] text-center">
+                  {item.title}
+                </span>
+                <p className="font-open font-semibold tracking-[-0.5px] text-[#FFFFFFB2] text-center">
+                  {item.description}
+                </p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>
